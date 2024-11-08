@@ -10,7 +10,7 @@ class DishService
 {
     public function all()
     {
-        return Dish::with('products:id')->get();
+        return Dish::with('products')->get();
     }
 
     public function store($data)

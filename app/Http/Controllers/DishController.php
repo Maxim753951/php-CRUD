@@ -42,7 +42,7 @@ class DishController
             }
             */
 
-            $dish->load('products:id');
+            $dish->load('products:id,name');
 
             return response()->json([
                 'data' => $dish
